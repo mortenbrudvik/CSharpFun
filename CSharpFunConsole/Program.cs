@@ -1,4 +1,7 @@
-﻿using static System.Console;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Common;
+using static System.Console;
 
 namespace CSharpFunConsole
 {
@@ -6,21 +9,7 @@ namespace CSharpFunConsole
     {
         private static void Main(string[] args)
         {
-            WriteLine("Pattern matching C# 7");
-            
-            WriteLine("is expression");
-            const string colorDescription = "blue";
-            if (colorDescription is var newColorDescription)
-            {
-                newColorDescription += " and red";
-                WriteLine(newColorDescription);
-            }
-            
-            
-            
-
-
-            WriteLine("Hello World!");
+            CSharp7_Examples.Run();
         }
     }
 }
